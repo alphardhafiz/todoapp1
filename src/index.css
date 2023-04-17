@@ -1,13 +1,120 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+
+:root {
+  --primary: #a9907e;
+  --secondary: #f3deba;
+  --third: #abc4aa;
+  --fourth: #675d50;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kalam", cursive;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  height: auto;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color: var(--secondary);
+  padding: 2rem;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.control .btn-form {
+  background-color: green;
+  width: 80%;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4caf50;
+}
+
+.task h2 {
+  text-align: center;
+}
+
+.task button {
+  background-color: transparent;
+  border: none;
+  transition: 0.3s;
+}
+
+.task button:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+
+.complete-button svg,
+.return-button svg {
+  color: green;
+  font-size: 1.5rem;
+}
+
+.edit-button svg {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.delete-button svg {
+  color: rgb(149, 10, 10);
+  font-size: 1.5rem;
+}
+
+.task .incomplete,
+.task .complete {
+  background-color: var(--secondary);
+  color: var(--fourth);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1rem auto;
+}
+
+.task table th,
+.task table td {
+  text-align: center;
+}
+
+.task table th:nth-child(2) {
+  width: 30%;
+}
+
+.task table {
+  width: 100%;
 }

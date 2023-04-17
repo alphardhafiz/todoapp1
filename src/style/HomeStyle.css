@@ -1,0 +1,34 @@
+.add-button {
+  /* text-align: left; */
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.add-button .user-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-button .button-adduser,
+.btn {
+  text-decoration: none;
+  background-color: var(--third);
+  color: white;
+  display: inline-block;
+  margin: 0 0 2rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.add-button .button-adduser:hover,
+.btn:hover {
+  background-color: #8eca8c;
+}
+
+.task {
+  text-align: justify;
+}
